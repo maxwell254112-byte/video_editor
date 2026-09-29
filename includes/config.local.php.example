@@ -1,0 +1,18 @@
+<?php
+declare(strict_types=1);
+
+/**
+ * Copy this file to includes/config.local.php and adjust the paths.
+ * Do not commit config.local.php if it contains machine-specific paths.
+ */
+return [
+    'ffmpeg_path' => 'C:/ffmpeg/bin/ffmpeg.exe',
+    'ffprobe_path' => 'C:/ffmpeg/bin/ffprobe.exe',
+    'php_cli' => 'C:/xampp/php/php.exe',
+    'max_video_size' => 500 * 1024 * 1024,
+    'max_image_size' => 20 * 1024 * 1024,
+    'max_audio_size' => 50 * 1024 * 1024,
+    'composition_width' => 1920,
+    'composition_height' => 1080,
+    'composition_fps' => 30,
+];

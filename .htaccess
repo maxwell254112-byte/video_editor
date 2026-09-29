@@ -1,0 +1,10 @@
+Options -Indexes
+
+<FilesMatch "(?i)\.(md|log|ini|example|sql)$">
+    Require all denied
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(?:includes|bin|storage)(?:/|$) - [F,L]
+</IfModule>
